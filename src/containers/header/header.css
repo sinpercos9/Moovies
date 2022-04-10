@@ -1,0 +1,117 @@
+.Moovies__header{
+    display: grid;
+}
+.Moovies__header-content {
+    flex-grow: 1;
+    display: grid;
+    justify-content: left;
+    align-items: flex-end;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.Moovies__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+    color: bisque;
+
+}
+.Moovies__header-content p {
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    color: antiquewhite;
+
+}
+.Moovies__header-content__input {
+    width: 100%;
+    margin: 2rem 0 0 ;
+
+    display: flexbox;
+    flex-direction: column;
+}
+
+.Moovies__header-content__input input {
+    background: #4993a5;
+    border: 2px blanchedalmond;
+    outline: navajowhite;
+    
+    border-radius: 5px 5px 5px 5px;
+    min-height: 50px;
+    width: 40%;
+    padding: 0 1rem;
+    font-family: var(--font-family);
+    font-size: 20px;
+
+}
+.Moovies__header-content__sign, button{
+    padding: 1rem 1rem;
+    color: rgb(10, 10, 10);
+    background: blanchedalmond;
+    margin-top: 1rem;
+
+    font-family:var(--font-family);
+    font-size: 25px;
+    border-radius: 0 3rem 0 3rem;
+    line-height: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .Moovies__header{
+      flex-direction: column;
+  } 
+
+  .Moovies__header-content{
+      margin: 0 0 3 rem;
+  }
+
+}
+@media screen and (max-width: 650px) {
+    .Moovies__header h1{
+        font-size: 48px;
+        line-height: 60px;
+        flex-direction: column;
+    } 
+  
+    .Moovies__header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+  }
+  @media screen and (max-width: 490px) {
+    .Moovies__header h1{
+        font-size: 36px;
+        line-height: 48px;
+        flex-direction: column;
+    } 
+  
+    .Moovies__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .Moovies__header-content__input input
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+    .Moovies__header-content__input button
+    {
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+  }
